@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/Pages/HomePage.dart';
 import 'package:flutter_application/Pages/CartPage.dart';
 import 'package:flutter_application/Pages/ItemPage.dart';
+import 'package:flutter_application/Pages/main_page.dart';
 //import 'package:flutter_application/Pages/main_page.dart';
 // import 'package:get/get.dart';
 //import 'package:flutter_application/Pages/adminlogin.dart';
@@ -28,12 +29,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
-    //  home: MainPage(),
-      routes: {
-        "/": (context) => HomePage(),
-         "CartPage": (context) => CartPage(),
-        "itemPage": (context) => ItemPage()
-      },
+     home: MainPage(),
+      // routes: {
+      //   "/": (context) => HomePage(),
+      //    "CartPage": (context) => CartPage(),
+      //   "itemPage": (context) => ItemPage()
+      // },
     );
   }
 }
